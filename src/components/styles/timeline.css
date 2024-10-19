@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+.design-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+  min-height: 100vh;
+  padding: 100px 0;
+  font-family: Jost;
+}
+
+.design {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline {
+  width: 100%;
+  height: auto;
+  max-width:900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-content {
+  padding: 20px;
+  background: #1f1f1f;
+  -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    font-size: 12px;
+  border-radius: 5px;
+  color: white;
+  padding: 1.5rem;
+  transition: 0.4s ease;
+  overflow-wrap: break-word !important;
+  margin: 1rem;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.timeline-component {
+  margin: 0px 20px 20px 20px;
+}
+
+.timeline-content:hover {
+  -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+  transform: translateY(-5px);
+}
+
+.timeline-content p{
+    text-wrap: break-word;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+  }
+  .timeline-middle {
+    position: relative;
+    background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+    width: 3px;
+    height: 100%;
+  }
+  .main-middle {
+    opacity: 0;
+  }
+  .timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+    .timeline-content {
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    .timeline-component {
+        margin: 0px 20px 20px 20px;
+    }
+
+
+  
+}
+
+
+
+
+.Hero-Banner-Timeline{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    
+}
+
+.Hero-Banner-Timeline h1{
+    font-size: 13rem;
+    color: #774939;
+    letter-spacing: 0.8rem;
+    margin-top: -3%;
+    position: relative;
+    font-family: 'Alata', sans-serif;
+    text-align: center
+    ;
+    white-space: nowrap;
+    
+   
+}
+
+.Hero-Banner-Timeline h1::after {
+    content: attr(data-text); /* Use the same text as the original element */
+    position: absolute;
+    top: 6px; /* Adjust the position to create the parallax effect */
+    left: 6px; /* Adjust the position to create the parallax effect */
+    
+    color: transparent; /* Make the fill color transparent */
+    -webkit-text-stroke: 2px #DC5343; /* Shadow color */
+    white-space: nowrap;
+    z-index: -1; /* Place it behind the original text */
+}
+
+
+@media (max-width: 768px) {
+    .Hero-Banner-Timeline h1 {
+        font-size: 8rem; /* Adjust font size for tablets */
+    }
+
+    .Hero-Banner-Timeline{
+        margin-bottom: -15%;
+    }
+}
+
+.day{
+  
+    font-size: 3rem;
+    margin-bottom: 2.5%;
+}
+
+#day2{
+    margin-top: -10%;
+}
+

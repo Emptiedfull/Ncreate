@@ -1,0 +1,75 @@
+.Showcase-Container{
+    padding-left:4% ;
+    padding-right: 4%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 50px;
+    align-self: center;
+    justify-content: space-around;
+}
+
+.Events-HeroBanner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+   
+    height: 90vh;
+}
+
+.Events-HeroBanner h1{
+    font-size: 13rem;
+    color: #774939;
+    letter-spacing: 0.8rem;
+    margin-top: -3%;
+    position: relative;
+    font-family: 'Bangers', cursive;
+    text-align: center;
+    white-space: nowrap;
+    
+   
+}
+
+.Events-HeroBanner h1::after {
+    content: attr(data-text); /* Use the same text as the original element */
+    position: absolute;
+    top: 6px; /* Adjust the position to create the parallax effect */
+    left: 6px; /* Adjust the position to create the parallax effect */
+    
+    color: transparent; /* Make the fill color transparent */
+    -webkit-text-stroke: 2px #DC5343; /* Shadow color */
+    white-space: nowrap;
+    z-index: -1; /* Place it behind the original text */
+}
+
+
+.HeroText{
+    font-size: 1.5rem;
+    margin-top: 1%;
+    width: 50%;
+    text-align: center;
+    font-weight: 500;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 768px){
+    .Showcase-Container{
+       width: 100%;
+    }
+    .Events-HeroBanner h1{
+        font-size: 8rem;
+    }
+    .HeroText{
+        font-size: 1.5rem;
+        width: 80%;
+    }
+    
+}

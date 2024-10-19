@@ -1,0 +1,126 @@
+
+.event-card{
+    position: relative;
+    display: flex;
+}
+
+.event-card-content{
+    position: absolute;
+    top: 20px;
+    font-size: 3rem;
+    width: 100%;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+.event-card-content h1{
+    text-align: center;
+    font-size: 3rem;
+    color: #f0f0f0;
+    font-family: 'Outfit', sans-serif;
+
+}
+
+.hover-card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0; /* Start with zero height */
+    background: rgba(0, 0, 0, 0.8); /* Darker background for hover content */
+    color: white;
+    overflow: auto;
+    padding: 0 20px; /* Horizontal padding only */
+    box-sizing: border-box;
+    
+    transition: height 0.3s ease-in-out, padding 0.3s ease-in-out; /* Smooth transition */
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.event-card:hover .hover-card-content {
+    height: 80%; /* Expand to full height on hover */
+    padding: 20px; /* Add vertical padding on hover */
+}
+
+.hover-card-content::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+.hover-card-content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1); /* Background of the scrollbar track */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+
+.hover-card-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5); /* Background of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+    border: 3px solid rgba(0, 0, 0, 0.8); /* Border around the thumb */
+}
+
+.hover-card-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.7); /* Background of the scrollbar thumb on hover */
+}
+
+.hover-card-content h1 {
+    font-size: 3rem;
+    margin-bottom: 7px;
+}
+
+.hover-card-content p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+#Info{
+    margin-top:5px
+}
+
+#SecondaryInfo{
+    margin-top: 5px;
+}
+
+.register-btn{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.register-btn {
+    position: absolute;
+    top: 6%;
+    right: 10%;
+    background-color: #FACA78; /* Background color */
+    color: #333; /* Text color */
+    padding: 10px 20px; /* Padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2rem; /* Font size */
+    font-family: 'Outfit', sans-serif; /* Apply Outfit font */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.register-btn:hover {
+    background-color: #ff4081; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+@media screen and (max-width: 768px) {
+    .event-card-content h1 {
+        font-size: 2rem; /* Decrease font size on smaller screens */
+    }
+
+    .hover-card-content h1 {
+        font-size: 2rem; /* Decrease font size on smaller screens */
+    }
+
+    .hover-card-content p {
+        font-size: 1.2rem; /* Decrease font size on smaller screens */
+    }
+
+    .register-btn {
+        font-size: 1rem; /* Decrease font size on smaller screens */
+    }
+    
+}
