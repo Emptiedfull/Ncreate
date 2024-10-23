@@ -22,8 +22,8 @@ import figma from './images/workshops/figma.jpg'
 
 function Carousel() {
   return (
-    <div className="container">
-    
+    <div className='container' >
+
       <Swiper
         effect={'coverflow'}
         grabCursor={true}

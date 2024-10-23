@@ -9,6 +9,7 @@ import Timeline from './pages/Timeline';
 import Contact from './pages/Contact';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
+import Test from './pages/test';
 
 function App() {
   return (<>
@@ -23,6 +24,7 @@ function App() {
           <Route path='/showcase' element={<Showcase />} />
           <Route path='/timeline' element={<Timeline />} />
           <Route path='/contact' element={<Contact/>} />
+          <Route path='/test' element={<Test />} />
         </Routes>
       </div>
     </Router>

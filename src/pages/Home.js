@@ -1,15 +1,17 @@
 import React from 'react';
-import Navbar from '../components/navbar';
+
 import '../components/styles/home.css';
 import { useNavigate } from 'react-router-dom';
-import strip from '../components/images/strip.png';
-import map from '../components/images/Map.png';
 
+import map from '../components/images/Map.png';
+import bg from '../components/images/bg.png'
+import micro from '../components/images/partners/micro.png'
 import { useEffect, useState } from 'react';
 
 const importAll = (r) => r.keys().map(r);
 const Events = importAll(require.context('../components/images/Comps', false, /\.(png|jpe?g|svg)$/));
 const projects = importAll(require.context('../components/images/projects', false, /\.(png|jpe?g|svg)$/));
+
 
 function Home() {
 
@@ -68,9 +70,9 @@ function Home() {
             <div className='H-HeroText'>
                 <div className='Motto'>
                     <h1>LITHIUM</h1>
-                    <h2>Innovate,Play,Create</h2>
+                    <h2>Innovate, Play, Create</h2>
                 </div>
-                
+
             </div>
             <div className='Hero-graphic'>
                 <img src={map} alt=''></img>
@@ -104,7 +106,7 @@ function Home() {
             </div>
 
         </div>
-        <div className='filler'>
+        {/* <div className='filler'>
 
             <div className='ContFiller Events' onClick={()=> history('./events')}>
                 <h3 className='filler-title'>Upcoming Events</h3>
@@ -119,7 +121,74 @@ function Home() {
                 </div>
             </div>
 
+        </div> */}
+        <div className='About-Us'>
+            <div className='About-Text'>
+                <h1>
+                    About DTC
+                </h1>
+                <p>
+                    Delhi Tech Circuit is a network of over a hundred tech clubs across Delhi NCR, offering school students opportunities to engage in tech-related events, projects, meetups, and competitions. Despite this, many new and emerging tech clubs often miss out on these opportunities due to limited visibility and recognition within the community
+                    DTC is not just a club but a launchpad for students who aspire to excel in technology, innovation, and leadership. It helps bridge the gap between academic learning and industry requirements by giving students practical exposure to cutting-edge tech
+
+                </p>
+            </div>
+            <div className='About-Graphic'>
+                <img src={bg} alt='' />
+
+            </div>
+
         </div>
+        <div className='About-Us'>
+        <div className='About-Graphic'>
+                <img src={bg} alt='' />
+
+            </div>
+
+            <div className='About-Text'>
+                <h1>
+                    About Lithium
+                </h1>
+                <p>
+                With engaging hands-on activities, captivating tech demos, and exciting competitions, this event is designed to fuel curiosity and foster innovation. This carnival will bring together hundreds of talented students, tech enthusiasts, and innovators eager to explore the latest advancements and challenges in the tech world.
+                We would be holding many competitions partnered by various tech clubs of Delhi NCR like hackathons, cubing, hardware, gaming etc. We would also be holding workshops specifically tailored for girls to encourage their participation in STEM.
+
+
+                </p>
+            </div>
+          
+        </div>
+
+        <div className='partners'>
+            <h1>
+                Our Partners 
+            </h1>
+        <div className='partners-logo'>
+            <div className='partner-logo'>
+                    <img src={micro} alt='Partner Logo' />
+                </div>
+            <div className='partner-logo'>
+                <img src={micro} alt='Partner Logo' />
+            </div>
+            <div className='partner-logo'>
+                <img src={micro} alt='Partner Logo' />
+            </div>
+            <div className='partner-logo'>
+                <img src={micro} alt='Partner Logo' />
+            </div>
+            <div className='partner-logo'>
+                <img src={micro} alt='Partner Logo' />
+            </div>
+            <div className='partner-logo'>
+                <img src={micro} alt='Partner Logo' />
+            </div>
+            <div className='partner-logo'>
+                <img src={micro} alt='Partner Logo' />
+            </div>
+        </div>
+        
+        </div>
+
 
     </>
     );

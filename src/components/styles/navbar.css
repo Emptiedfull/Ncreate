@@ -1,5 +1,5 @@
 :root{
-    --primary-color: #68C7C1;
+    --primary-color: #010302;
     --secondary-color: 000000;
     --extra1: #F37D59;
 }
@@ -42,8 +42,8 @@
 
 .logo {
     object-fit: contain;
-    max-height: 60%;
-    max-width: 60%;
+    max-height: 50%;
+    
 }
 
 .title{
@@ -134,16 +134,16 @@ ul{
 
 @media (max-width: 768px) {
     .title {
-        font-size: 10rem; /* Increase font size for smaller screens */
+        font-size: 8rem; 
     }
 }
 
 @media (max-width: 480px) {
     .title {
-        font-size: 5rem; /* Further increase font size for even smaller screens */
+        font-size: 3.5rem; 
     }
     .nav-links {
-        font-size: 2rem; /* Decrease font size for smaller screens */
+        font-size: 2rem; 
     }
 }
 

@@ -21,10 +21,10 @@ export default function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission logic here
+        
         console.log('Form submitted:', formData);
         setFormStatus('Thank you for your message! We will get back to you soon.');
-        // Reset form
+       
         setFormData({
             name: '',
             email: '',

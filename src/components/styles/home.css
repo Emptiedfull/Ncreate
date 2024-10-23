@@ -1,5 +1,5 @@
 .HeroBanner{
-    width: 100vw;
+    
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
@@ -10,11 +10,12 @@
 }
 
 .Motto h1{
-    font-size: 17rem;
+    font-size: 10rem;
     color:  #DC5343;;
     letter-spacing: 1.1rem;
+    padding-top: 15%;
     
-    font-family: 'Bangers', cursive;
+    
     
 }
 
@@ -36,48 +37,48 @@
 @media (max-width: 768px) {
     .HeroBanner {
         display: flex;
-        flex-direction: column-reverse; /* Change to reverse column layout */
+        flex-direction: column; /* Change to reverse column layout */
         align-items: center; /* Center items horizontally */
+        gap:5rem
     }
 
     .Motto h1 {
-        font-size: 10rem; /* Adjust font size for smaller screens */
+        font-size: 8rem; /* Adjust font size for smaller screens */
         letter-spacing: 0.5rem; /* Adjust letter spacing for smaller screens */
     }
 
     .Motto h2 {
-        font-size: 2rem; /* Adjust font size for smaller screens */
+        font-size: 2
+        
+        rem; /* Adjust font size for smaller screens */
+    }
+
+    .Hero-graphic{
+        width: 100% !important; 
     }
 }
 
 @media (max-width: 480px) {
     .Motto h1 {
+        flex-direction: column-reverse;
         font-size: 8rem; /* Further adjust font size for even smaller screens */
         letter-spacing: 0.3rem; /* Further adjust letter spacing for even smaller screens */
     }
 
     .Motto h2 {
-        font-size: 1.5rem; /* Further adjust font size for even smaller screens */
+        font-size: 2rem; /* Further adjust font size for even smaller screens */
+        text-align: center;
     }
 }
 
 @media screen and (max-width: 768px){
-    .HeroBanner{
-        width: 100vw;
-        display: flex;
-        flex-direction: row;
-        box-sizing: border-box;
-        padding: 6%;
-        
-        
-    }
-    
+  
     .Motto h1{
         font-size: 8rem;
         color:  #774939;
         letter-spacing: 0.5rem;
         margin-bottom: 3%;
-        font-family: 'Bangers', cursive;
+        
        
     }
     
@@ -92,13 +93,7 @@
         border-radius:10px ;
     }
     
-    .Motto h1{
-        font-size: 5rem;
-        color:  #774939;
-        letter-spacing: 0.5rem;
-        margin-bottom: 3%;
-        font-family: 'Bangers', cursive;
-    }
+   
 }
         
 
@@ -144,7 +139,7 @@
 .filler {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 7%;
 }
 
 .Hero-graphic{
@@ -201,5 +196,118 @@
     .ContFiller {
         width: 80%; /* Adjust width for smaller screens */
         margin-bottom: 20px; /* Add margin between items */
+    }
+}
+
+
+
+.About-Us{
+    
+    padding: 5rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    
+    gap: 5rem;
+}
+
+.About-Graphic{
+    object-fit: cover;
+    width: 140%;
+    height: 100%;
+    align-self: center;
+    border-radius: 10px;
+}
+
+.About-Graphic img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.About-Text{
+    justify-content: center;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.About-Text h1{
+    font-size: 4rem;
+}
+
+.About-Text p{
+    font-size: 1.5rem;
+}
+
+@media (max-width:768px){
+    .About-Us{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .About-Graphic{
+        height:60vw;
+        width:100%
+    }
+
+    .About-Text h1{
+        text-align: center;
+    }
+
+    .About-Text p{
+        text-align: center;
+    }
+}
+
+.partners{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.partners h1{
+    margin-top: 2rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.partners-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.partner-logo {
+    flex: 1 1 calc(25% - 2rem); /* Responsive width, 4 items per row with gap */
+    max-width: calc(25% - 2rem);
+    box-sizing: border-box;
+}
+
+.partner-logo img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .partner-logo {
+        flex: 1 1 calc(50% - 2rem); /* 2 items per row with gap */
+        max-width: calc(50% - 2rem);
+    }
+}
+
+/* Media query for extra-small screens */
+@media (max-width: 480px) {
+    .partner-logo {
+        flex: 1 1 calc(100% - 2rem); /* 1 item per row with gap */
+        max-width: calc(100% - 2rem);
     }
 }

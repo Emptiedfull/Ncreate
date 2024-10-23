@@ -5,15 +5,46 @@
   padding: 0 ;
 }
 body {
-  background-color: #FBECCD;
-  font-family: 'Krub', sans-serif;
-  overflow-x: hidden;
+  
 
-  position: absolute;
-    z-index: -1;
-    width: 100vw;
-    height: 100%; /* Ensure it covers the full viewport height */
-    background-image: url('./components/images/strip.png'); /* Replace with your image path */
-    background-repeat: repeat; /* Repeat the image */
-    background-size: 80%; /* Default size, can be adjusted as needed */
+
+
+    
+  height: 100%; 
+  background-image: url('./components/images/bg3.png');
+  background-repeat:no-repeat; 
+ 
+
+   /* Default size, can be adjusted as needed */
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 65%; /* 1rem = 12px */
+  }
+}
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 87.5%; /* 1rem = 14px */
+  }
+}
+
+
+@media (max-width: 768px) {
+  html {
+    font-size: 70%; /* 1rem = 8px */
+  }
+}
+
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50%; /* 1rem = 6px */
+  }
 }
