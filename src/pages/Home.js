@@ -1,6 +1,5 @@
 import React from "react";
 
-import { useNavigate } from "react-router-dom";
 import "../components/styles/home.css";
 
 import map from "../components/images/graphic1.png";
@@ -25,8 +24,6 @@ const projects = importAll(
 );
 
 function Home() {
-  const history = useNavigate();
-
   const calculateTimeLeft = () => {
     const targetDate = new Date("2024-11-03T00:00:00");
     const now = new Date();
@@ -136,15 +133,13 @@ function Home() {
         <div className="About-Text">
           <h1>About DTC</h1>
           <p>
-            Delhi Tech Circuit is a network of over a hundred tech clubs across
-            Delhi NCR, offering school students opportunities to engage in
-            tech-related events, projects, meetups, and competitions. Despite
-            this, many new and emerging tech clubs often miss out on these
-            opportunities due to limited visibility and recognition within the
-            community DTC is not just a club but a launchpad for students who
-            aspire to excel in technology, innovation, and leadership. It helps
-            bridge the gap between academic learning and industry requirements
-            by giving students practical exposure to cutting-edge tech
+            The Delhi Tech Circuit is a network of over a hundred tech clubs
+            across Delhi NCR, offering school students opportunities to engage
+            in tech-related events. Despite this, many new and emerging tech
+            clubs often miss out on these opportunities due to limited
+            recognition within the larger community. The DTC bridges the gap
+            between academic learning and industry requirements by giving
+            students practical exposure.
           </p>
         </div>
         <div className="About-Graphic">
@@ -159,15 +154,12 @@ function Home() {
         <div className="About-Text">
           <h1>About Lithium</h1>
           <p>
-            With engaging hands-on activities, captivating tech demos, and
-            exciting competitions, this event is designed to fuel curiosity and
-            foster innovation. This carnival will bring together hundreds of
-            talented students, tech enthusiasts, and innovators eager to explore
-            the latest advancements and challenges in the tech world. We would
-            be holding many competitions partnered by various tech clubs of
-            Delhi NCR like hackathons, cubing, hardware, gaming etc. We would
-            also be holding workshops specifically tailored for girls to
-            encourage their participation in STEM.
+            We facilitate tech events by promoting, marketing, documenting and
+            administrating tech events, taking the burden off the organisers and
+            allowing them to do what they do best - organise. we aim to bring
+            the DTC to excluded schools and eventually broaden it to include
+            other states. We encourage and organise workshops and competitions
+            promoting female participation in tech.
           </p>
         </div>
       </div>
