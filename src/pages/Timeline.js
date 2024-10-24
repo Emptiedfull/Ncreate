@@ -13,7 +13,10 @@ export default function Timeline() {
 
             </div>
             <section className="design-section">
-            <h1 className="day">DAY 1</h1>
+                <div className='daybox'>
+                <h1 className="day">DAY 1</h1>
+                </div>
+           
                 <div className="timeline">
 
                 
@@ -143,7 +146,9 @@ export default function Timeline() {
             
         </section>
         <section className="design-section" id="day2">
-            <h1 className="day">DAY 2</h1>
+        <div className='daybox'>
+                <h1 className="day">DAY 2</h1>
+                </div>
                 <div className="timeline">
 
                 

@@ -16,7 +16,7 @@ export default function Events() {
                     Events
                 </h1>
                 <div className="HeroText">
-                With a rich tapestry of events and workshops, LITHIUM offers a unique platform for knowledge sharing, collaboration, and innovation. From coding competitions and design challenges to insightful talks and hands-on workshops, LITHIUM caters to a wide range of interests and skill levels. All events and workshops are open to school delegations and individuals participants. Register now to be a part of this exciting journey!
+                <p>With a rich tapestry of events and workshops, LITHIUM offers a unique platform for knowledge sharing, collaboration, and innovation. From coding competitions and design challenges to insightful talks and hands-on workshops, LITHIUM caters to a wide range of interests and skill levels. All events and workshops are open to school delegations and individuals participants. Register now to be a part of this exciting journey!</p>
             </div>
             </div>
             <div className="Events-Content">

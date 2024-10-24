@@ -68,7 +68,7 @@ export default function Contact() {
                                 
                             </div>
                             <div class="input-container textarea">
-                                <textarea name="message" class="input" placeholder="message" required onChange={handleChange}></textarea>
+                                <textarea name="message" class="input" placeholder="Message" required onChange={handleChange}></textarea>
                                
                             </div>
                             <input type="submit" onClick={handleSubmit} class="btn" />

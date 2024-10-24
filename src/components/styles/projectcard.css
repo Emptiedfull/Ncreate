@@ -2,7 +2,7 @@
     position: relative;
     flex: 1 1 300px; /* Grow, shrink, and set base size */
     max-width: 400px; /* Ensure items don't grow beyond this width */
-    max-height: 250px; /* Adjust height to create a horizontal rectangle */
+    max-height: 200px; /* Adjust height to create a horizontal rectangle */
     margin: 10px; /* Optional: Add margin around each card */
     border-radius: 6px; /* Optional: Add rounded corners */
      /* Ensure content doesn't overflow */
@@ -31,9 +31,9 @@
 }
 
 .ProjectTitle{
-    height: 15%;
+    font-size: 8rem;
     display:flex;
-    align-items: center;
+    
 }
 .ProjectTitle img{
     
@@ -44,7 +44,8 @@
 }
 
 .ProjectTitle h1{
-    font-size: 1.7rem;
+    align-self: center;
+    font-size: 1.4rem;
     font-weight: 500;
     margin-left: 10px;
 }

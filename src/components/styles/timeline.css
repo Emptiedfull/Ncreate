@@ -6,15 +6,25 @@
   justify-content: center;
  
   min-height: 100vh;
-  padding: 100px 0;
+  margin-bottom: 20rem;
   font-family: Jost;
+  
 }
 
 .design {
   display: flex;
   align-items: center;
   justify-content: center;
+ 
 }
+
+.daybox{
+   
+  margin-bottom: 1.8rem;
+  border-radius: 8px;
+  background-color: white;
+}
+
 
 .timeline {
   width: 100%;
@@ -27,9 +37,9 @@
 
 .timeline-content {
   padding: 20px;
-  background: #1f1f1f;
-  -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-    font-size: 12px;
+  background: #3d2218;
+  
+    font-size: 1.1rem;
   border-radius: 5px;
   color: white;
   padding: 1.5rem;
@@ -45,7 +55,7 @@
 }
 
 .timeline-content:hover {
-  -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+ 
   transform: translateY(-5px);
 }
 
@@ -59,10 +69,12 @@
   .timeline {
     display: grid;
     grid-template-columns: 1fr 3px 1fr;
+
   }
   .timeline-middle {
     position: relative;
-    background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+   
+    background-color: #DC5343;
     width: 3px;
     height: 100%;
   }
@@ -76,7 +88,8 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+    background-color: #DC5343;
+    
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
@@ -95,6 +108,24 @@
   
 }
 
+@media(min-width: 1400px) {
+  .timeline{
+    max-width: 1200px;
+  }
+  .timeline-content{
+    font-size: 1.15rem;
+  }
+}
+
+@media(min-width: 2000px){
+  .timeline{
+    max-width: 1600px;
+  }
+  .timeline-content{
+    font-size: 1.2rem;
+  }
+}
+
 
 
 
@@ -109,7 +140,7 @@
 
 .Hero-Banner-Timeline h1{
     font-size: 13rem;
-    color: #774939;
+    color: white;
     letter-spacing: 0.8rem;
     margin-top: -3%;
     position: relative;
@@ -145,9 +176,11 @@
 }
 
 .day{
-  
+    padding: 0.9rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     font-size: 3rem;
-    margin-bottom: 2.5%;
+   
 }
 
 #day2{

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "./styles/navbar.css";
 import logo from "./images/logo.png";
-
+import mkv from './images/out1.webm'
 
 const Navbar = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -22,16 +22,37 @@ const Navbar = () => {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     }
+    const handleMouseEnter = (event) => {
+        event.target.play();
+        event.target.playbackRate = 0.8;
+    }
+    
+    const handleMouseLeave = (event) => {
+        event.target.pause();
+    }
+
+    
+    
 
     
     return (
         <nav className="navbar">
+            
             {isMenuOpen && <div className='Overlay' onClick={toggleMenu}>
 
 
             </div>}
             <div className='navbar-container'>
-                <img src={logo} alt="Home" className='logo' />
+            <video 
+                src={mkv} 
+                alt="Home" 
+                className='logo' 
+                
+                loop 
+                muted 
+                onMouseEnter={handleMouseEnter} 
+                onMouseLeave={handleMouseLeave} 
+            />
                 <div className='home'>
 
                     <span className='title'>

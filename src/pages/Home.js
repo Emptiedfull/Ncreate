@@ -3,11 +3,20 @@ import React from 'react';
 import '../components/styles/home.css';
 import { useNavigate } from 'react-router-dom';
 
-import map from '../components/images/Map.png';
-import bg from '../components/images/bg.png'
+import map from '../components/images/graphic1.png';
+
 import micro from '../components/images/partners/micro.png'
+import dubleiu from '../components/images/partners/dubleiu.png'
+import boat from '../components/images/partners/boat.png'
+import intel from '../components/images/partners/intel.png'
+import dominos from '../components/images/partners/dominos.png' 
+import codeninja from '../components/images/partners/codeninja.png'
+import tata from '../components/images/partners/tata.png'
 import { useEffect, useState } from 'react';
 
+import ablithium from '../components/images/ablithium.png'
+import abdtc from '../components/images/abdtc.png'
+import { img } from 'framer-motion/client';
 const importAll = (r) => r.keys().map(r);
 const Events = importAll(require.context('../components/images/Comps', false, /\.(png|jpe?g|svg)$/));
 const projects = importAll(require.context('../components/images/projects', false, /\.(png|jpe?g|svg)$/));
@@ -79,7 +88,7 @@ function Home() {
             </div>
         </div>
         <div className='Markthedate'>
-            <h2>Meeting you in</h2>
+            <h2>Seeing you in</h2>
             <div className='countdown'>
                 {Object.keys(timeLeft).length > 0 ? (
                     <>
@@ -134,14 +143,14 @@ function Home() {
                 </p>
             </div>
             <div className='About-Graphic'>
-                <img src={bg} alt='' />
+                <img src={abdtc} alt='' />
 
             </div>
 
         </div>
         <div className='About-Us'>
-        <div className='About-Graphic'>
-                <img src={bg} alt='' />
+        <div className='About-Graphic lithium'>
+                <img src={ablithium} alt='' />
 
             </div>
 
@@ -168,22 +177,22 @@ function Home() {
                     <img src={micro} alt='Partner Logo' />
                 </div>
             <div className='partner-logo'>
-                <img src={micro} alt='Partner Logo' />
+                <img src={dubleiu} alt='Partner Logo' style={{width:'70%'}}/>
             </div>
             <div className='partner-logo'>
-                <img src={micro} alt='Partner Logo' />
+                <img src={boat} alt='Partner Logo' style={{width:'40%'}} />
             </div>
             <div className='partner-logo'>
-                <img src={micro} alt='Partner Logo' />
+                <img src={intel} alt='Partner Logo' style={{width:'60%'}} />
             </div>
             <div className='partner-logo'>
-                <img src={micro} alt='Partner Logo' />
+                <img src={dominos} alt='Partner Logo' style={{width:"80%"}}/>
             </div>
             <div className='partner-logo'>
-                <img src={micro} alt='Partner Logo' />
+                <img src={codeninja} alt='Partner Logo' />
             </div>
             <div className='partner-logo'>
-                <img src={micro} alt='Partner Logo' />
+                <img src={tata} alt='Partner Logo' style={{width:"50%"}}/>
             </div>
         </div>
         
