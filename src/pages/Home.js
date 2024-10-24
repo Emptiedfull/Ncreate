@@ -79,7 +79,7 @@ function Home() {
             <div className='H-HeroText'>
                 <div className='Motto'>
                     <h1>LITHIUM</h1>
-                    <h2>Innovate, Play, Create</h2>
+                    <h2>Reactive by nature,<br></br>Revolutionary by design.</h2>
                 </div>
 
             </div>

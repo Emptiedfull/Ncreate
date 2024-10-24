@@ -25,9 +25,15 @@
     
 }
 
-.Motto h2{
+.Motto h2 {
     font-size: 2.7rem;
-    
+    font-family: 'Alata', sans-serif;
+    color: #774939; /* font color bkl */
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    font-weight: 500; /* set to 600 for bold bkl */
+    letter-spacing: 0.05em;
+    max-width: 800px;
 }
 
 body {
