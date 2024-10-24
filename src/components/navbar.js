@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import "./styles/navbar.css";
 import logo from "./images/logo.png";
 import mkv from './images/out1.webm'
@@ -6,6 +6,7 @@ import mkv from './images/out1.webm'
 const Navbar = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const videoRef = useRef(null);
 
     useEffect(() => {
         const handleResize = () => {
@@ -18,6 +19,12 @@ const Navbar = () => {
             window.removeEventListener('resize', handleResize);
         }
     }, [])
+
+    useEffect(() => {
+        if (videoRef.current) {
+            videoRef.current.currentTime = 0.6;
+        }
+    }, []);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -50,6 +57,7 @@ const Navbar = () => {
                 
                 loop 
                 muted 
+                ref={videoRef}
                 onMouseEnter={handleMouseEnter} 
                 onMouseLeave={handleMouseLeave} 
             />
