@@ -1,35 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap");
 .design-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
- 
+
   min-height: 100vh;
   margin-bottom: 20rem;
   font-family: Jost;
-  
 }
 
 .design {
   display: flex;
   align-items: center;
   justify-content: center;
- 
 }
 
-.daybox{
-   
+.daybox {
   margin-bottom: 1.8rem;
   border-radius: 8px;
   background-color: white;
 }
 
-
 .timeline {
   width: 100%;
   height: auto;
-  max-width:900px;
+  max-width: 900px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -38,8 +34,8 @@
 .timeline-content {
   padding: 20px;
   background: #3d2218;
-  
-    font-size: 1.1rem;
+
+  font-size: 1.1rem;
   border-radius: 5px;
   color: white;
   padding: 1.5rem;
@@ -55,26 +51,22 @@
 }
 
 .timeline-content:hover {
- 
   transform: translateY(-5px);
 }
 
-.timeline-content p{
-    text-wrap: break-word;
+.timeline-content p {
+  text-wrap: break-word;
 }
-
-
 
 @media screen and (min-width: 768px) {
   .timeline {
     display: grid;
     grid-template-columns: 1fr 3px 1fr;
-
   }
   .timeline-middle {
     position: relative;
-   
-    background-color: #DC5343;
+
+    background-color: #dc5343;
     width: 3px;
     height: 100%;
   }
@@ -88,102 +80,89 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: #DC5343;
-    
+    background-color: #dc5343;
+
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 
-    .timeline-content {
-        margin-left: 20px;
-        margin-right: 20px;
+  .timeline-content {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
-    }
-
-    .timeline-component {
-        margin: 0px 20px 20px 20px;
-    }
-
-
-  
+  .timeline-component {
+    margin: 0px 20px 20px 20px;
+  }
 }
 
-@media(min-width: 1400px) {
-  .timeline{
+@media (min-width: 1400px) {
+  .timeline {
     max-width: 1200px;
   }
-  .timeline-content{
+  .timeline-content {
     font-size: 1.15rem;
   }
 }
 
-@media(min-width: 2000px){
-  .timeline{
+@media (min-width: 2000px) {
+  .timeline {
     max-width: 1600px;
   }
-  .timeline-content{
+  .timeline-content {
     font-size: 1.2rem;
   }
 }
 
-
-
-
-.Hero-Banner-Timeline{
-    margin-top: 5%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content:center ;
-    height: 15rem;
+.Hero-Banner-Timeline {
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15rem;
 }
 
-.Hero-Banner-Timeline h1{
-    font-size: 13rem;
-    color: white;
-    letter-spacing: 0.8rem;
-    margin-top: -3%;
-    position: relative;
-    font-family: 'Alata', sans-serif;
-    text-align: center
-    ;
-    white-space: nowrap;
-    
-   
+.Hero-Banner-Timeline h1 {
+  font-size: 13rem;
+  color: white;
+  letter-spacing: 0.8rem;
+  margin-top: -3%;
+  position: relative;
+  font-family: "Alata", sans-serif;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .Hero-Banner-Timeline h1::after {
-    content: attr(data-text); /* Use the same text as the original element */
-    position: absolute;
-    top: 4px; /* Adjust the position to create the parallax effect */
-    left: 4px; /* Adjust the position to create the parallax effect */
-    
-    color: transparent; /* Make the fill color transparent */
-    -webkit-text-stroke: 2px #DC5343; /* Shadow color */
-    white-space: nowrap;
-    z-index: -1; /* Place it behind the original text */
-}
+  content: attr(data-text);
+  position: absolute;
+  top: 4px;
+  left: 4px;
 
+  color: transparent;
+  -webkit-text-stroke: 2px #dc5343;
+  white-space: nowrap;
+  z-index: -1;
+}
 
 @media (max-width: 768px) {
-    .Hero-Banner-Timeline h1 {
-        font-size: 8rem; /* Adjust font size for tablets */
-    }
+  .Hero-Banner-Timeline h1 {
+    font-size: 8rem;
+  }
 
-    .Hero-Banner-Timeline{
-        margin-bottom: -15%;
-    }
+  .Hero-Banner-Timeline {
+    margin-bottom: -15%;
+  }
 }
 
-.day{
-    padding: 0.9rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    font-size: 3rem;
-   
+.day {
+  padding: 0.9rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 3rem;
 }
 
-#day2{
-    margin-top: -10%;
+#day2 {
+  margin-top: -10%;
 }
-

@@ -1,64 +1,64 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css'); /* Import Font Awesome for social icons */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
 
 .footer {
-    margin-top: 5%;
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+  margin-top: 5%;
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }
 
 .footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .footer-logo h2 {
-    font-size: 2rem;
-    margin: 0;
+  font-size: 2rem;
+  margin: 0;
 }
 
 .footer-links {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 
 .footer-links a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #ff4081; /* Change to your desired hover color */
+  color: #ff4081;
 }
 
 .footer-address {
-    margin-top: 1%;
-    text-align: center;
-    line-height: 1.6;
+  margin-top: 1%;
+  text-align: center;
+  line-height: 1.6;
 }
 
 .footer-socials {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 
 .footer-socials a {
-    color: white;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
 }
 
 .footer-socials a:hover {
-    color: #ff4081; /* Change to your desired hover color */
+  color: #ff4081;
 }
 
 .footer-bottom {
-    margin-top: 20px;
-    font-size: 0.9rem;
-    color: #aaa;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
 }

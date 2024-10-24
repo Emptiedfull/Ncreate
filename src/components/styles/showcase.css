@@ -1,93 +1,80 @@
-.Showcase-Container{
-    padding-left:4% ;
-    padding-right: 4%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-    row-gap: 50px;
-    align-self: center;
-    justify-content: space-around;
+.Showcase-Container {
+  padding-left: 4%;
+  padding-right: 4%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  row-gap: 50px;
+  align-self: center;
+  justify-content: space-around;
 }
 
-.Events-HeroBanner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   
-   
-    height: 90vh;
+.Events-HeroBanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 90vh;
 }
 
-.Events-HeroBanner h1{
-    font-size: 14rem;
-    color: white;
-    letter-spacing: 0.6rem;
-    margin-top: -3%;
-    position: relative;
-    font-family: 'Bangers', cursive;
-    text-align: center;
-    white-space: nowrap;
-    
-   
+.Events-HeroBanner h1 {
+  font-size: 14rem;
+  color: white;
+  letter-spacing: 0.6rem;
+  margin-top: -3%;
+  position: relative;
+  font-family: "Bangers", cursive;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .Events-HeroBanner h1::after {
-    content: attr(data-text); 
-    position: absolute;
-    top: 4px; 
-    left: 4px;
-    
-    color: transparent; 
-    -webkit-text-stroke: 2px #DC5343; 
-    white-space: nowrap;
-    z-index: -1; 
+  content: attr(data-text);
+  position: absolute;
+  top: 4px;
+  left: 4px;
+
+  color: transparent;
+  -webkit-text-stroke: 2px #dc5343;
+  white-space: nowrap;
+  z-index: -1;
 }
 
-
-.HeroText{
-    font-size: 1.5rem;
-    margin-top: 0.2%;
-    width: 50%;
-    text-align: justify;
-    background-color: rgba(255,255,255, 0.4);
-}
-    
-
-.HeroText p{
-    padding: 1.5rem;
-    color: black;
-    position: relative;
-    font-weight: 500;
-    
+.HeroText {
+  font-size: 1.5rem;
+  margin-top: 0.2%;
+  width: 50%;
+  text-align: justify;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
-
-
-
-
-
-html, body {
-    margin: 0;
-    padding: 0;
+.HeroText p {
+  padding: 1.5rem;
+  color: black;
+  position: relative;
+  font-weight: 500;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 
-@media screen and (max-width: 768px){
-    .Showcase-Container{
-        
-       width: 100%;
-    }
-    .Events-HeroBanner h1{
-        font-size: 8rem;
-    }
-    .Events-HeroBanner{
-        height: 70vh;
-    }
-    .HeroText{
-        font-size: 1.3rem;
-        width: 80%;
-    }
-    
+@media screen and (max-width: 768px) {
+  .Showcase-Container {
+    width: 100%;
+  }
+  .Events-HeroBanner h1 {
+    font-size: 8rem;
+  }
+  .Events-HeroBanner {
+    height: 70vh;
+  }
+  .HeroText {
+    font-size: 1.3rem;
+    width: 80%;
+  }
 }
