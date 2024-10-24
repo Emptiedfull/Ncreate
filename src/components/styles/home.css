@@ -236,6 +236,7 @@ body {
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 300px; /* need to fuck with this if you change the about text bkl */
 }
 
 .About-Text h1 {
