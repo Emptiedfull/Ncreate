@@ -1,48 +1,39 @@
-.Events-HeroBanner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   
-   
-    height: 90vh;
-}
-@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap'); /* Import Alata font */
+.Events-HeroBanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-.Events-HeroBanner h1{
-    font-size: 13rem;
-    color: white;
-    letter-spacing: 0.8rem;
-    margin-top: -3%;
-    position: relative;
-    font-family: 'Alata', sans-serif !important;
-    text-align: center;
-    white-space: nowrap;
-    margin-bottom: 2%;
-    
-   
+  height: 90vh;
+}
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
+.Events-HeroBanner h1 {
+  font-size: 13rem;
+  color: white;
+  letter-spacing: 0.8rem;
+  margin-top: -3%;
+  position: relative;
+  font-family: "Alata", sans-serif !important;
+  text-align: center;
+  white-space: nowrap;
+  margin-bottom: 2%;
 }
 
-.Container-title{
-    font-size: 4rem;
+.Container-title {
+  font-size: 4rem;
 }
 
-
-
-.HeroText{
-    font-size: 1.5rem;
-    margin-top: 1%;
-    width: 50%;
-    text-align: center;
-    font-weight: 500;
+.HeroText {
+  font-size: 1.5rem;
+  margin-top: 1%;
+  width: 50%;
+  text-align: center;
+  font-weight: 500;
 }
 
-.Workshops-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+.Workshops-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-
-

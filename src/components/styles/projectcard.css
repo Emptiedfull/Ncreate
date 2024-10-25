@@ -1,157 +1,148 @@
 .Projectcard {
-    position: relative;
-    flex: 1 1 300px; /* Grow, shrink, and set base size */
-    max-width: 400px; /* Ensure items don't grow beyond this width */
-    max-height: 200px; /* Adjust height to create a horizontal rectangle */
-    margin: 10px; /* Optional: Add margin around each card */
-    border-radius: 6px; /* Optional: Add rounded corners */
-     /* Ensure content doesn't overflow */
-     display: flex;
-     flex-direction: column;
-     gap: 5px;
-}
+  position: relative;
+  flex: 1 1 300px;
+  max-width: 400px;
+  max-height: 200px;
+  margin: 10px;
+  border-radius: 6px;
 
-.Projectcardmain{
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
-.Projectcard img{
-    height: 100%;
-    width: 100%;
-    border-radius: 6px;
-    object-fit: fill;
-}
-
-.ProjectTitle{
-    font-size: 8rem;
-    display:flex;
-    
-}
-.ProjectTitle img{
-    
-    height: 100%;
-    width: 10%;
-    border-radius: 50%;
-
-}
-
-.ProjectTitle h1{
-    align-self: center;
-    font-size: 1.4rem;
-    font-weight: 500;
-    margin-left: 10px;
-}
-
 
 .Projectcardmain {
-    position: relative;
-    
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Projectcard img {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  object-fit: fill;
+}
+
+.ProjectTitle {
+  font-size: 8rem;
+  display: flex;
+}
+.ProjectTitle img {
+  height: 100%;
+  width: 10%;
+  border-radius: 50%;
+}
+
+.ProjectTitle h1 {
+  align-self: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.Projectcardmain {
+  position: relative;
 }
 
 .Project-card-hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)); /* Gradient background from bottom to top */ /* Semi-transparent background */
-    color: white;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-    
-    border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+  border-radius: 6px;
 }
 
 .Projectcard:hover .Project-card-hover {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
-.Project-card-votes{
-    position: absolute;
-    right: 2%;
-    top: 2%;
-}
-
-.Project-card-hover-content{
-    position: relative;
-   top: 70%;
-   left: 4%;
-   width: 90%;
-   display: flex;
-    flex-direction: column;
-   
+.Project-card-votes {
+  position: absolute;
+  right: 2%;
+  top: 2%;
 }
 
-.projectype{
-    font-size: 2rem;
-    font-weight: bolder;
+.Project-card-hover-content {
+  position: relative;
+  top: 70%;
+  left: 4%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
 }
 
-.Creator{
-    display: flex;
-    font-size: 1.2rem;
-    justify-content: space-between;
+.projectype {
+  font-size: 2rem;
+  font-weight: bolder;
 }
 
-.socials-link{
-    color: antiquewhite;
-   
-    
-}
-.socials{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+.Creator {
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: space-between;
 }
 
-.socials-link:hover{
-   
-    color: #DC5343;
+.socials-link {
+  color: antiquewhite;
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
-.ProjectTitle{
-    font-weight: 700;
+.socials-link:hover {
+  color: #dc5343;
+}
+
+.ProjectTitle {
+  font-weight: 700;
 }
 
 .Project-card-votes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
 }
 
 .vote-button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: color 0.3s ease-in-out;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
 }
 
 .vote-button.upvote:hover {
-    color: #ff4500; /* Reddit's upvote color */
+  color: #ff4500;
 }
 
 .vote-button.downvote:hover {
-    color: #7193ff; /* Reddit's downvote color */
+  color: #7193ff;
 }
 
 .vote-count {
-    color: white;
-    font-size: 1.2rem;
-    margin: 5px 0;
+  color: white;
+  font-size: 1.2rem;
+  margin: 5px 0;
 }
 
-.upvoted{
-    color: #ff4500;
+.upvoted {
+  color: #ff4500;
 }
